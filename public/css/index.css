@@ -1,0 +1,124 @@
+.nav-stacked{
+    font-size: 12px;
+}
+.main{
+    background-color: #e8e8e8;
+    padding: 20px;
+}
+.contents{
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.contents a{
+    cursor: pointer;
+}
+.contents h5{
+    text-align: left;
+    padding-left: 12px;
+}
+.content{
+    display: inline-block;
+    padding: 2px;
+}
+#loginBtn, #logoutBtn{
+    margin: 10px;
+}
+#serahInput{
+    width: 100%;
+}
+.glyphicon-open{
+    font-size: 20px;
+}
+.pager{
+    margin: 10px 0;
+}
+.pager a{
+    color: #3f3e3e;
+}
+#naav{
+    margin-bottom: 10px;
+}
+#sideMenu a{
+    padding: 5px 15px;
+    color: #3F3E3E;
+}
+hr{
+    margin: 10px 0;
+}
+#boderl{
+    border-left: 1px solid #e8e8e8;
+    padding: 0;
+}
+.navbar-brand{
+    padding-top: 5px;
+}
+#searchForm{
+    width: 100%;
+    padding: 0;
+}
+#top{
+    margin-left: 0;
+    padding: 0;
+}
+#adCloseBtn{
+    float: right;
+}
+#myCarousel{
+    clear: right;
+}
+#videoBox{
+    border: 2px solid #fff;
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    display: none;
+}
+#sideText{
+    font-size: 15px;
+}
+.dropdown-header{
+    color:#428bca;
+}
+.navbar-brand img{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+strong{
+    color: #428bca;
+}
+#logout{
+    display: none;
+}
+footer{
+    padding: 20px;
+}
+footer > button{
+    margin: 0 10px;
+    font-size: 500px;
+}
+#footBottom{
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 1px solid #e8e8e8;
+}
+#footBottom > a{
+    margin: 10px;
+    color: #000;
+    text-decoration: none;
+    font-size: 12px;
+}
+#contTop{
+    margin-top: 30px;
+}
+#sideMenu .active a{
+    color: #fff;
+}
+#logoDiv {
+    padding-right: 0;
+}
+#searchDiv{
+    padding: 0;
+}

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Youtube</title>
+<link rel="icon" href="favicon.ico" />
+<link rel="stylesheet" href="css/bootstrap.css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+	<nav id="naav" class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-3" id="logoDiv">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="/index.html">
+							<img src="sampleimg/logo.png"/>
+						<span>YouTube</span>
+						<strong class="visible-lg-inline">BLUE</strong></a>
+					</div>
+				</div>
+				<!--<div class="col-lg-10">-->
+				<!--	<div class="row">-->
+						<div id="top" class="col-xs-6">
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse navbar-ex1-collapse" id="searchDiv">
+								<form id="searchForm" class="navbar-form navbar-left" role="search">
+									<div class="form-group col-sm-10">
+										<input type="text" id="serahInput" class="form-control" name="searchText" placeholder="검색">
+										
+									</div>
+									<button type="submit" class="btn btn-default">
+											<span class="glyphicon glyphicon-search"></span>
+										</button>
+								</form>
+							</div>
+						</div>
+							<div class="col-sm-3 hidden-xs" id="loginDiv">
+								<ul class="nav navbar-nav navbar-right">
+									<!-- <li>
+										<a href="/login.html">
+											<span class="glyphicon glyphicon-open hidden-xs hidden-sm"></span>
+										</a>
+									</li> -->
+									<li>
+										<button id="loginBtn" class="btn btn-primary btn-sm">로그인</button>
+										<button id="logoutBtn" class="btn btn-primary btn-sm">로그아웃</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					
+				
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-2 hidden-xs" id="test">
+				<ul id="sideMenu" class="nav nav-pills nav-stacked">
+					<li class="active">
+					    <a href="#home" data-toggle="tab">
+						<span class="glyphicon glyphicon-home"></span>
+					    &nbsp;&nbsp;홈</a>
+					</li>
+					<li>
+					    <a href="#poppular" data-toggle="tab">
+					    <span class="glyphicon glyphicon-fire"></span>
+					    &nbsp;&nbsp;인기</a>
+					</li>
+					<li>
+						<a href="#recently" data-toggle="tab">
+						<span class="glyphicon glyphicon-hourglass"></span>
+					    &nbsp;&nbsp;최근 본 동영상</a>
+					</li>
+					<li>
+						<a href="#recently" data-toggle="tab">
+						<span class="fa fa-youtube-play"></span>
+					    &nbsp;&nbsp;YouTube Red 가입</a>
+					</li>
+					<hr/>
+					<li class="dropdown-header">인기 YOUTUBE
+					</li>
+					<li>
+					    <a href="#music" data-toggle="tab">
+					    <span class="fa fa-music"></span>
+					    &nbsp;&nbsp;음악</a>
+					</li>
+					<li>
+					    <a href="#sports" data-toggle="tab">
+					    <span class="fa fa-futbol-o"></span>
+					    &nbsp;&nbsp;스포츠</a>
+					</li>
+					<li>
+						<a href="#game" data-toggle="tab">
+						<span class="fa fa-gamepad"></span>
+					    &nbsp;&nbsp;게임</a>
+					</li>
+					<li>
+						<a href="#movie" data-toggle="tab">
+						<span class="fa fa-film"></span>
+					    &nbsp;&nbsp;영화</a>
+					</li>
+					<li>
+						<a href="#tv" data-toggle="tab">
+						<span class="fa fa-television"></span>
+					    &nbsp;&nbsp;TV 프로그램</a>
+					</li>
+					<li>
+						<a href="#news" data-toggle="tab">
+						<span class="fa fa-newspaper-o"></span>
+					    &nbsp;&nbsp;뉴스</a>
+					</li>
+					<li>
+						<a href="#realtime" data-toggle="tab">
+						<span class="fa fa-podcast"></span>
+					    &nbsp;&nbsp;실시간</a>
+					</li>
+					<li>
+						<a href="#video" data-toggle="tab">
+						<span class="fa fa-video-camera"></span>
+					    &nbsp;&nbsp;360' 동영상</a>
+					</li>
+					<hr/>
+					<li>
+						<a href="#searchChannel" data-toggle="tab">
+						<span class="fa fa-plus-circle"></span>
+					    &nbsp;&nbsp;채널 탐색</a>
+					</li>
+					<hr/>
+					<li id="sideText">
+						지금 로그인하여 채널과 추천 동영상을 확인하세요!!
+					</li>
+				</ul>
+   			</div>
+			<div id="boderl" class="col-sm-10">
+				<ul class="pager">
+	 				<li><a href="/index.html">홈</a></li>
+	 				<li><a href="https://www.youtube.com/feed/trending">인기</a></li>
+	 			</ul>
+	 			<div class="main">
+	 				<div class="row">
+	 					<div class="col-sm-8 col-sm-push-2">
+	 						<div class="advertise">
+								<button class="btn" id="adCloseBtn">
+									<span class="glyphicon glyphicon-remove"></span>
+								</button>
+		 						<!-- <img class="img-responsive" src="images/youtubead.png"/> -->
+		 						<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+									<!-- Carousel 하단의 동그란 nav 요소 -->
+									<ol class="carousel-indicators">
+										<!-- data-target="Carousel 전체의 선택자"
+											data-slide-to="컨텐츠 인덱스" -->
+										<li data-target="#myCarousel" data-slide-to="0"></li>
+										<li data-target="#myCarousel" data-slide-to="1"></li>
+										<li data-target="#myCarousel" data-slide-to="2"></li>
+									</ol>
+									<div class="carousel-inner">
+										<div class="item active">
+											<img src="images/youtubead.png"/>
+											<div class="carousel-caption">
+											광고를 닫고 영상을 드래그해보세요.!
+											</div>
+										</div>
+										<div class="item">
+											<img src="images/youtubead.png"/>
+											<div class="carousel-caption">
+											광고를 닫고 영상을 드래그해보세요.!
+											</div>
+										</div>
+										<div class="item">
+											<img src="images/youtubead.png"/>
+											<div class="carousel-caption">
+											광고를 닫고 영상을 드래그해보세요.!
+											</div>
+										</div>
+									</div>
+									<!-- 이전, 다음 control UI -->
+									<a href="#myCarousel" class="left carousel-control" data-slide="prev">
+										<span class="glyphicon glyphicon-chevron-left"></span>
+										<span class="sr-only">이전</span>
+									</a>
+									<a href="#myCarousel" class="right carousel-control" data-slide="next">
+										<span class="glyphicon glyphicon-chevron-right"></span>
+										<span class="sr-only">다음</span>
+									</a>
+								</div>
+								<!-- 드래그 한 영상을 보여주기 위한 Box-->
+								<div id="videoBox" ondrop="drop(event)" ondragover="allowDrop(event)">
+									<iframe id="vid" width="100%" height="500" frameborder="0" allowfullscreen></iframe>
+								</div>
+		 					</div>
+		 				</div>
+	 				</div>
+
+					<div class="row" id="conTop">
+						<div class="col-sm-10 col-sm-push-1">
+			 				<div class="contents col-sm-12">
+			 					<h5>맞춤 동영상</h4>
+			 					<div class="content col-sm-2" id="con1">
+				 					<a href="https://www.youtube.com/watch?v=Z1J_7ENdg7s">
+				 						<img class="img-responsive" src="images/con1.png"/>
+				 					</a>
+			 					</div>
+			 					<div class="content col-sm-2" id="con2">
+			 						<a href="https://www.youtube.com/watch?v=9qE2P9UvU38">
+			 							<img class="img-responsive" src="images/con2.png"/>
+			 						</a>
+			 					</div>
+			 					<div class="content col-sm-2" id="con3">
+			 						<a href="https://www.youtube.com/watch?v=F8CBoKOK6m4">
+			 							<img class="img-responsive" src="images/con3.png"/>
+			 						</a>
+			 					</div>
+			 					<div class="content col-sm-2" id="con4">
+			 						<a href="https://www.youtube.com/watch?v=YQLZbo9zhr4">
+			 							<img class="img-responsive" src="sampleimg/dead.png"/>
+			 						</a>
+			 					</div>
+			 					<div class="content col-sm-2" id="con5">
+			 						<a href="https://www.youtube.com/watch?v=w_8oPI6Vexc">
+			 							<img class="img-responsive" src="sampleimg/kingnote.png"/>
+			 						</a>
+			 					</div>
+			 					<div class="content col-sm-2" id="con6">
+			 						<a href="https://www.youtube.com/watch?v=mqhI-VRAIrs">
+			 							<img class="img-responsive" src="images/con6.png"/>
+			 						</a>
+			 					</div>
+			 					
+			 				</div>
+			 				<div class="contents col-sm-12">
+			 					<div class="content col-sm-2" id="con7">
+			 						<a href="https://www.youtube.com/watch?v=mTLEEct8Yj0">
+			 							<img class="img-responsive" src="sampleimg/sangsu.png"/>
+			 						</a>
+			 					</div>
+			 					<div class="content col-sm-2" id="con8">
+			 						<a href="https://www.youtube.com/watch?v=K6d9JZspPEY">
+			 							<img class="img-responsive" src="sampleimg/sing.png"/>
+			 						</a>
+			 					</div>
+			 					<div class="content col-sm-2" id="con9">
+			 						<a href="https://www.youtube.com/watch?v=4WfBg0C0Oks">
+			 							<img class="img-responsive" src="sampleimg/kingsman.png"/>
+			 						</a>
+			 					</div>
+			 					<div class="content col-sm-2" id="con10">
+			 						<a href="https://www.youtube.com/watch?v=kBCzsrQAa4U">
+			 							<img class="img-responsive" src="sampleimg/realfriends.png"/>
+			 						</a>
+			 					</div>
+			 					<div class="content col-sm-2" id="con11">
+			 						<a href="https://www.youtube.com/watch?v=KFTzerS0isA">
+			 							<img class="img-responsive" src="sampleimg/jiwon.png"/>
+			 						</a>
+			 					</div>
+			 					<div class="content col-sm-2" id="con12">
+			 						<a href="https://www.youtube.com/watch?v=aGGikPMNn2w">
+			 							<img class="img-responsive" src="sampleimg/theplan.png"/>
+			 						</a>
+			 					</div>
+			 				</div>
+		 				</div>
+					</div>
+				</div>
+				<footer>
+					<img src="sampleimg/footer.png"/>
+					<button class="btn btn-default btn-sm">언어:한국어
+						<span class="caret"></span>
+					</button>
+					<button class="btn btn-default btn-sm">콘텐츠 위치:한국
+						<span class="caret"></span>
+					</button>
+					<button class="btn btn-default btn-sm">제한 모드:사용 안함
+						<span class="caret"></span>
+					</button>
+					<button class="btn btn-default btn-sm">
+						<span class="glyphicon glyphicon-hourglass"></span>최근 본 동영상
+					</button>
+					<button class="btn btn-default btn-sm">
+						<span class="glyphicon glyphicon-question-sign"></span>도움말
+					</button>
+					<div id="footBottom">
+						<a href="#info">정보</a>
+						<a href="#press">프레스</a>
+						<a href="#own">저작권</a>
+						<a href="#creater">크리에이터</a>
+						<a href="#advertise">광고</a>
+						<a href="#programmer">개발자</a>
+						<a href="#+youtube">+YouTube</a>
+						<br/>
+						<a href="#userule">이용약관</a>
+						<a href="#infoprotect">개인정보 보호</a>
+						<a href="#safety">정책 및 안전</a>
+						<a href="#sendopnion">의견 보내기</a>
+						<a href="#newskill">새로운 기능 테스트하기</a>
+						<small>© 2017 YouTube, LLC</small>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="myModal">
+	<!-- modal-lg  | default | modal-sm -->	
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span><span class="sr-only">모달 닫기</span></button>
+        <h4 class="modal-title">페이지 설명</h4>
+      </div>
+      <div class="modal-body">
+        <p>활성화된 기능 : 검색, 회원가입, 로그인, 영상재생
+       	</p>
+       	<p>검색 - 검색어 입력후 검색시 Youtube의 검색된 페이지로 이동</p>
+       	<p>영상재생 - 광고 Croucel을 닫고 나타나는 흰 박스에  영상을 드래그해서 드롭하면 페이지 이동없이 영상 재생 가능
+       	(중복 드래그 가능)</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script src="js/jquery-1.11.2.js"></script>
+<script src="js/bootstrap.js"></script>	
+<script src="js/index.js"></script>
+</body>
+</html>
