@@ -1,6 +1,8 @@
 # AWS_Nodejs_YoutubeBLUE
 
-개요 : 평소 자주 이용 하던 Youtube의 불편했던 점을 개선해 보기 위하여 제작하게 되었습니다. 
+개요 : 
+
+      평소 자주 이용 하던 Youtube의 불편했던 점을 개선해 보기 위하여 제작하게 되었습니다. 
 
       처음 Youtube에 뜨게 되는 맞춤 동영상 중에서 보고 싶은 영상이 2개 이상일 경우 하나를 보고 홈으로 다시 오게 
       
@@ -12,4 +14,4 @@
       
       
       
-      
+      ![YoutubeBLUE MAIN](public/images/readme1.png)
