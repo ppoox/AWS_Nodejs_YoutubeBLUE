@@ -1,6 +1,6 @@
 # AWS_Nodejs_YoutubeBLUE
 
-**개요 : **
+**개요 :**
 
       평소 자주 이용 하던 Youtube의 불편했던 점을 개선해 보기 위하여 제작하게 되었습니다. 
 
@@ -14,10 +14,16 @@
       
       
       
+      
+      
 ### YoutubeBLUE 메인
 
 
+
 ![readme1](https://user-images.githubusercontent.com/28284285/50890520-b2647780-143d-11e9-8454-0f8369123888.png)
+
+
+
 
 
 
@@ -26,6 +32,8 @@
 
 
 ![readme2](https://user-images.githubusercontent.com/28284285/50890562-cb6d2880-143d-11e9-8ae4-45ed4ed2feb8.JPG)
+
+
 
 
 
@@ -48,6 +56,8 @@
       
       AWS EC2 가상 서버(ubutu16.04, nodejs)에서 보안 그룹 설정 및 웹 서버 접속 확인 (SSH client: FileZilla)
       
+
+
 
 
 
