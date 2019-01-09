@@ -14,4 +14,4 @@
       
       
       
-      ![YoutubeBLUE MAIN](public/images/readme1.png)
+      ![YoutubeBLUE MAIN](https://github.com/ppoox/AWS_Nodejs_YoutubeBLUE/public/images/readme1.png)
